@@ -67,7 +67,7 @@ Focus on:
 
 
 
-### **Week 1 Assignment (Summary)**
+## **Week 1 Assignment (Summary)**
 
 This week’s assignment focuses on **analyzing a workload** you may want to accelerate later in the course and understanding how it fits into the GPU execution model. You will not write CUDA code yet.
 
