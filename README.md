@@ -2,14 +2,13 @@
 
 *A 6-week winter course for researchers and engineers*
 
----
 
 Most researchers and engineers already have heavy Python code—simulations, numerical solvers, matrix workloads, data transforms, ML ops—that run slowly on CPUs.
 This course teaches you to **accelerate your own real project** using **GPU programming** with **CUDA** and **Triton**.
 
 Over 6 weeks, we will go from **GPU intuition → CUDA fundamentals → memory optimization → real kernels → Triton → a final mini-project**, where you implement and benchmark a GPU-accelerated version of a problem you personally care about.
 
----
+
 
 ## Goals:
 
@@ -23,7 +22,7 @@ By the end of this course, you will be able to:
 * Profile your compute and quantify speedups vs CPU implementations
 * Accelerate a real Python-based research problem—or your own project
 
----
+
 
 ## Who This Course Is For
 
@@ -38,16 +37,16 @@ By the end of this course, you will be able to:
 * Some C/C++ helpful but **not required**
 * Basic linear algebra knowledge
 
----
+
 
 ## Course Structure (6 Weeks)
 
 Each week contains:
 
-* 📘 **Concepts & readings** from NVIDIA docs and academic lectures
-* 💻 **Hands-on coding assignments**
-* 📊 **Weekly submission**
-* 🧪 **Progress towards the mini-project**
+*  **Concepts & readings** from NVIDIA docs and academic lectures
+*  **Hands-on coding assignments**
+*  **Weekly submission**
+*  **Progress towards the mini-project**
 
 Weekly breakdown:
 
@@ -60,7 +59,7 @@ Weekly breakdown:
 
 Each week will have its own markdown file under `weekX.md`.
 
----
+
 
 ## Final Mini-Project
 
@@ -85,7 +84,7 @@ You finish the course with:
 * A clean codebase
 * Techniquees you can use in research papers or engineering work
 
----
+
 
 ## Tools You Will Use
 
@@ -95,56 +94,7 @@ You finish the course with:
 * **NVCC**, **Nsight Systems**, **Nsight Compute**, and timing via `torch.cuda.Event`
 * Git & GitHub for submissions
 
----
 
-## 📂 Repository Structure
-
-Gpu-Programming-WiDS/
-│
-├── README.md                     # Main course description
-│
-├── week1/
-│   ├── README.md                 # Instructions, learning goals, resources
-│   ├── assignment.md             # Weekly assignment
-│   └── resources/                # Optional PDFs, notes, papers for this week
-│       └── ...
-│
-├── week2/
-│   ├── README.md
-│   ├── assignment.md
-│   └── resources/
-│       └── ...
-│
-├── week3/
-│   ├── README.md
-│   ├── assignment.md
-│   └── resources/
-│       └── ...
-│
-├── week4/
-│   ├── README.md
-│   ├── assignment.md
-│   └── resources/
-│       └── ...
-│
-├── week5/
-│   ├── README.md
-│   ├── assignment.md
-│   └── resources/
-│       └── ...
-│
-├── week6/
-│   ├── README.md                 # Mini-project instructions
-│   ├── assignment.md             # Final project specification
-│   └── resources/
-│       └── ...
-│
-└── shared-resources/             # CUDA docs, lecture links, cheat sheets, etc.
-    ├── links.md
-    └── papers.md
-
-
----
 
 ## Key References
 
@@ -157,7 +107,7 @@ Gpu-Programming-WiDS/
 * **Triton (OpenAI):**
   [https://github.com/openai/triton](https://github.com/openai/triton)
 
----
+
 
 ## 🚀 Getting Started
 
@@ -166,4 +116,75 @@ Gpu-Programming-WiDS/
 3. Install the CUDA Toolkit + Python environment
 4. Start with **Week 1 → `weeks/week1.md`**
 
----
+Here is a **clean, concise section** you can paste directly into the root `README.md`.
+It only includes **two options**: your own NVIDIA laptop, or Google Colab — and gives setup steps for both.
+
+
+
+## GPU Access for This Course
+
+To complete this course, you need access to an NVIDIA GPU.
+You have **two simple options**:
+
+
+
+### **Option 1 — Use Your Own Laptop (Recommended if you have an NVIDIA GPU)**
+
+If your laptop/PC has an NVIDIA GPU (e.g., GTX/RTX series), you can run all CUDA and Triton code locally.
+
+**Setup steps:**
+
+1. **Install NVIDIA GPU drivers**
+   [https://www.nvidia.com/Download/index.aspx](https://www.nvidia.com/Download/index.aspx)
+
+2. **Install the CUDA Toolkit** (version 12.x or latest)
+   [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
+
+3. Verify CUDA is installed:
+
+   ```bash
+   nvcc --version
+   ```
+
+4. Use a Python environment:
+
+   ```bash
+   conda create -n gpu python=3.10
+   conda activate gpu
+   ```
+
+5. Install PyTorch with CUDA support (example for CUDA 12.1):
+
+   ```bash
+   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+   ```
+
+If your GPU is recent (RTX 20-series or newer), you’ll be able to run everything comfortably.
+
+
+
+### **Option 2 — Use Google Colab (No GPU Laptop Needed)**
+
+If you don’t have a machine with an NVIDIA GPU, you can still do **100% of the course** on Google Colab.
+
+1. Open a new Colab notebook
+   [https://colab.research.google.com/](https://colab.research.google.com/)
+
+2. Enable the GPU runtime:
+
+   ```
+   Runtime → Change runtime type → GPU
+   ```
+
+3. Verify GPU access in a notebook cell:
+
+   ```python
+   !nvidia-smi
+   ```
+
+Colab provides free access to NVIDIA T4/P100/V100 GPUs and works fully with CUDA and Triton.
+
+
+
+
+
