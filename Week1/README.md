@@ -66,49 +66,49 @@ Focus on:
 * How frameworks like PyTorch map operations to hardware
 
 
-##  **Week 1 Assignment (Summary)**
+### **Week 1 Assignment (Summary)**
 
-Your full assignment instructions are in `assignment.pdf`.
-Here is a preview of what you will do:
+This week’s assignment focuses on **analyzing a workload** you may want to accelerate later in the course and understanding how it fits into the GPU execution model. You will not write CUDA code yet.
 
-### **Task 1 — Identify a GPU-Accelerable Problem**
+### **Task 1 — Identify & Analyze a GPU-Accelerable Workload**
 
-Pick a workload you care about:
+Choose a computation-heavy task from your research or interests (e.g., a simulation loop, numerical kernel, ML operation, or data processing step).
+Write a **technical analysis (1–2 pages)** covering:
 
-* Research simulation
-* Numerical solver
-* ML operation / training bottleneck
-* Data analysis pipeline
-* Anything computation-heavy in Python
+* **Operation breakdown:** pseudocode, data shapes, parallelism opportunities
+* **Compute vs memory behavior:** compute-bound vs memory-bound, data reuse, dependencies
+* **Expected GPU mapping:** how threads, blocks, and grids would map to the iteration space, expected scaling behavior, potential issues (memory access, divergence)
 
-Write a short description of **why** it may benefit from GPU acceleration.
+**Note:** You do *not* need to provide a CPU runtime baseline this week.
+You have **until Week 3** to submit `cpu_baseline.py`.
 
+### **Task 2 — CUDA Execution Model Diagram**
 
-
-### **Task 2 — GPU Execution Model Diagram**
-
-Draw (on paper or digitally) the CUDA hierarchy:
+Create a diagram illustrating:
 
 ```
-Grid
- └── Blocks
-       └── Threads
+Grid → Blocks → Warps → Threads
 ```
 
-Annotate each level and briefly describe how your chosen workload might map to it.
+Add annotations showing:
+
+* How your chosen workload maps to this hierarchy
+* Where synchronization might be required
+* Where memory bottlenecks may occur
+* Where shared memory could be used (conceptually)
+
+Upload as an image or PDF.
 
 
+### **Submission Folder**
 
-**Submission folder:**
-Place your answers in the `week1` folder:
+Place your files here:
 
 ```
 week1/
- ├── assignment.md
- ├── diagrams/ (if any)
- └── notes.md (optional)
+ ├── assignment.pdf
+ └── cpu_baseline.py   # optional until Week 3
 ```
-
 
 
 ## **Optional Extra Resources**
