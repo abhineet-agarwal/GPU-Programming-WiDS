@@ -35,7 +35,7 @@ This week builds your mental model so everything later (memory, performance, ker
 **Focus**: Why CPUs hit a wall, power/memory constraints, throughput vs latency philosophy
 
 **NVIDIA CUDA Programming Guide — Chapter 1**  
-[https://docs.nvidia.com/cuda/cuda-c-programming-guide/](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)  
+[https://docs.nvidia.com/cuda/cuda-c-programming-guide/](https://docs.nvidia.com/cuda/cuda-programming-guide/) 
 Read: Sections 1.1–1.3  
 **Focus**: SIMT execution model, thread/block/grid hierarchy, host vs device
 
