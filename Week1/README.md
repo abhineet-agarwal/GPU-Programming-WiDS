@@ -49,8 +49,8 @@ Video: [https://www.youtube.com/watch?v=gNyEHuuFdPQ](https://www.youtube.com/wat
 
 **Stanford CS231n — Hardware/Software Interface (Lecture 15)**
 
-Slides & Video:
-[https://www.youtube.com/watch?v=WGf1f2HbJpE](https://www.youtube.com/watch?v=qQTDF0CBoxE)
+Video:
+[https://www.youtube.com/watch?v=qQTDF0CBoxE](https://www.youtube.com/watch?v=eZdOkDtYMoo)
 
 Focus on:
 
