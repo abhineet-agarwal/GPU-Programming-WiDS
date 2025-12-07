@@ -41,11 +41,10 @@ Focus on:
 
 
 
-### **2. UC Berkeley CS61C — Parallel Processors (Lecture 17)**
+### **2. UC Berkeley CS61C — Guest Lecture on GPUs by James Percy (Apple)**
 
 Video:
-[https://www.youtube.com/watch?v=gychBEOgG8A](https://www.youtube.com/watch?v=gychBEOgG8A)
-(If link breaks, search: *CS61C Parallel Processors Lecture 17*)
+[https://www.youtube.com/watch?v=xdcW52tEPfE](https://www.youtube.com/watch?v=xdcW52tEPfE)
 
 This gives the “physics layer” of performance:
 
@@ -58,7 +57,7 @@ This gives the “physics layer” of performance:
 ### **3. Stanford CS231n — Hardware/Software Interface (Lecture 15)**
 
 Slides & Video:
-[https://www.youtube.com/watch?v=WGf1f2HbJpE](https://www.youtube.com/watch?v=WGf1f2HbJpE)
+[https://www.youtube.com/watch?v=WGf1f2HbJpE](https://www.youtube.com/watch?v=eZdOkDtYMoo)
 
 Focus on:
 
