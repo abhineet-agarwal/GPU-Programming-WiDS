@@ -19,33 +19,35 @@ This week is foundational for all serious GPU work, including ML kernels and sci
 
 ## **Required Resources**
 
-### **1. NVIDIA CUDA Programming Guide — Memory Model & Performance**
+### **1. NVIDIA CUDA C++ Programming Guide — Memory Model & Performance**
 
 Read the following sections carefully:
 
-* **Chapter 5 — Memory Hierarchy**
-* **Chapter 6 — Performance Guidelines**
+* **Section 5.3 — Memory Hierarchy**
+* **Chapter 8 — Performance Guidelines**
+  * Section 8.2 (Maximize Utilization) — covers occupancy
+  * Section 8.3 (Maximize Memory Throughput) — covers coalescing and access patterns
 
- Link:
-[https://docs.nvidia.com/cuda/cuda-programming-guide/](https://docs.nvidia.com/cuda/cuda-programming-guide/)
+📄 Link:
+[https://docs.nvidia.com/cuda/cuda-c-programming-guide/](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
 
 Focus on:
 
 * Global vs shared vs constant memory
 * Latency vs bandwidth
-* Memory access patterns
+* Memory access patterns and coalescing
 * Occupancy 
 
 ---
 
 ### **2. Mark Harris — Coalesced Memory Access (GTC Talk)**
 
-Video:
-[https://www.nvidia.com/en-us/on-demand/session/gtc24-s62550/)](https://www.nvidia.com/en-us/on-demand/session/gtc24-s62550/)
+🎥 Video:
+[https://www.nvidia.com/en-us/on-demand/session/gtc24-s62550/](https://www.nvidia.com/en-us/on-demand/session/gtc24-s62550/)
 
 Focus on:
 
-* What “coalesced access” means
+* What "coalesced access" means
 * Why strided access is slow
 * How warps access memory
 
@@ -55,7 +57,7 @@ Focus on:
 
 Read **Chapter 39**.
 
- Link:
+📄 Link:
 [https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-39-parallel-prefix-sum-scan-cuda](https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-39-parallel-prefix-sum-scan-cuda)
 
 Focus on:
@@ -150,7 +152,6 @@ week3/
 
 ### **1. CUDA Best Practices Guide — Memory Optimizations**
 
-
 📄 Link:
 [https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/)
 
@@ -172,19 +173,12 @@ Learn how to profile kernels and interpret key GPU metrics.
 🎥 Introductory Tutorial (NVIDIA):
 [https://developer.nvidia.com/blog/using-nsight-compute-to-inspect-your-kernels/](https://developer.nvidia.com/blog/using-nsight-compute-to-inspect-your-kernels/)
 
-
 ---
 
 ### **3. NVIDIA Blog — Shared Memory & Bank Conflicts**
-
 
 📄 Shared Memory Overview:
 [https://developer.nvidia.com/blog/using-shared-memory-cuda-cc/](https://developer.nvidia.com/blog/using-shared-memory-cuda-cc/)
 
 📄 Bank Conflicts Explained:
-[https://github.com/Kobzol/hardware-effects-gpu/blob/master/bank-conflicts/README.md)](https://github.com/Kobzol/hardware-effects-gpu/blob/master/bank-conflicts/README.md)
-
-
-
-
-
+[https://github.com/Kobzol/hardware-effects-gpu/blob/master/bank-conflicts/README.md](https://github.com/Kobzol/hardware-effects-gpu/blob/master/bank-conflicts/README.md)
