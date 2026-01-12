@@ -48,7 +48,7 @@ These examples mirror exactly what you did in CUDA in Weeks 2–4.
 ---
 ---
 
-## 💻 **What You Will Build This Week**
+## **What You Will Build This Week**
 
 You will take a **real kernel from Week 3/4** and:
 
@@ -107,7 +107,7 @@ In your PDF, answer:
 
 ---
 
-## 📁 **Submission Folder**
+##  **Submission Folder**
 
 ```
 week5/
@@ -118,7 +118,7 @@ week5/
 
 ---
 
-## 📚 **Optional but Highly Recommended**
+## **Optional but Highly Recommended**
 
 * Triton autotuning examples
 * FlashAttention Triton implementation (read-only)
@@ -126,7 +126,7 @@ week5/
 
 ---
 
-## 🔗 Looking Ahead
+##  Looking Ahead
 
 **Week 6** is the **final mini-project**:
 
